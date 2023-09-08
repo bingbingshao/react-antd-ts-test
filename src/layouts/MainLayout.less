@@ -1,0 +1,54 @@
+.mainLayout {
+	height: 100%;
+	overflow: hidden;
+	min-height: 100vh;
+
+	.header {
+		padding-inline: 24px;
+		background: #fff;
+		border-bottom: 1px solid rgb(0 21 41 / 6%);
+		max-height: 56px;
+		min-height: 56px;
+	}
+
+	.sider {
+		padding: 24px 8px 0;
+		margin: 24px 0 0 24px;
+		background: #fff;
+		position: relative;
+		border-radius: 8px;
+		// box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+
+		&.padding0 {
+			padding: 0;
+		}
+
+		.collapsed {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			padding: 10px 10px 20px;
+			width: 100%;
+			text-align: right;
+			font-size: 15px;
+			background-color: transparent;
+			// border-top: 1px solid #eee;
+			cursor: pointer;
+		}
+	}
+
+	.layoutContent {
+		padding: 24px 24px 0 24px;
+		overflow: auto;
+	}
+
+	.content {
+		flex: 1;
+	}
+
+	.footer {
+		font-size: 14px;
+		color: rgb(0 0 0 / 45%);
+		text-align: center;
+	}
+}
